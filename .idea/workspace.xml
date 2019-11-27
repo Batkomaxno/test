@@ -1,20 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fe96b91b-ee7e-4216-858c-8eee153e325a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/MailBoxPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TestConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="fe96b91b-ee7e-4216-858c-8eee153e325a" name="Default" comment="Тест">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drv/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/drv/chromedriver.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HomePage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LoginPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/logintest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logintest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/HomePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LoginPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MainPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/logintest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logintest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -38,8 +27,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/logintest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="-51">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#813#814#0" expanded="true" />
@@ -61,7 +49,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/MailBoxPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
+            <state relative-caret-position="799">
               <caret line="47" column="44" selection-start-line="47" selection-start-column="44" selection-end-line="47" selection-end-column="44" />
               <folding>
                 <element signature="e#260#261#0" expanded="true" />
@@ -117,6 +105,12 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Barkomaxno" />
+        <option value="kniva" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -128,8 +122,8 @@
         <option value="$PROJECT_DIR$/src/main/java/MainPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/MailBoxPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/TestConstants.java" />
-        <option value="$PROJECT_DIR$/src/main/java/logintest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/logintest.java" />
       </list>
     </option>
   </component>
@@ -195,7 +189,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1574878549264" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1574878841137" />
     <property name="last_opened_file_path" value="D:/test-developers-master/test-developers-master" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
@@ -306,6 +300,14 @@
       <option name="presentableId" value="Default" />
       <updated>1524042021741</updated>
     </task>
+    <task id="LOCAL-00001" summary="Тест">
+      <created>1574878617193</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1574878617194</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -373,6 +375,10 @@
       <window_info anchor="right" id="Maven Projects" order="7" />
     </layout>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Тест" />
+    <option name="LAST_COMMIT_MESSAGE" value="Тест" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://D:/test-developers-master/test-developers-master/package.json" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.8/testng-6.8.jar!/org/testng/Assert.class" />
@@ -384,6 +390,36 @@
             <element signature="imports" expanded="true" />
             <element signature="e#321#322#0" expanded="true" />
             <element signature="e#357#358#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/TestConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="44" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MailBoxPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="47" column="44" selection-start-line="47" selection-start-column="44" selection-end-line="47" selection-end-column="44" />
+          <folding>
+            <element signature="e#260#261#0" expanded="true" />
+            <element signature="e#296#297#0" expanded="true" />
+            <element signature="e#319#320#0" expanded="true" />
+            <element signature="e#340#341#0" expanded="true" />
+            <element signature="e#650#651#0" expanded="true" />
+            <element signature="e#672#673#0" expanded="true" />
+            <element signature="e#480#481#0" expanded="true" />
+            <element signature="e#501#502#0" expanded="true" />
+            <element signature="e#812#813#0" expanded="true" />
+            <element signature="e#840#841#0" expanded="true" />
+            <element signature="e#618#619#0" expanded="true" />
+            <element signature="e#639#640#0" expanded="true" />
+            <element signature="e#982#983#0" expanded="true" />
+            <element signature="e#1003#1004#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -410,36 +446,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MailBoxPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="47" column="44" selection-start-line="47" selection-start-column="44" selection-end-line="47" selection-end-column="44" />
-          <folding>
-            <element signature="e#260#261#0" expanded="true" />
-            <element signature="e#296#297#0" expanded="true" />
-            <element signature="e#319#320#0" expanded="true" />
-            <element signature="e#340#341#0" expanded="true" />
-            <element signature="e#650#651#0" expanded="true" />
-            <element signature="e#672#673#0" expanded="true" />
-            <element signature="e#480#481#0" expanded="true" />
-            <element signature="e#501#502#0" expanded="true" />
-            <element signature="e#812#813#0" expanded="true" />
-            <element signature="e#840#841#0" expanded="true" />
-            <element signature="e#618#619#0" expanded="true" />
-            <element signature="e#639#640#0" expanded="true" />
-            <element signature="e#982#983#0" expanded="true" />
-            <element signature="e#1003#1004#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/TestConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="44" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -449,8 +455,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/logintest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="-51">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#813#814#0" expanded="true" />
