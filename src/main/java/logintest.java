@@ -4,48 +4,56 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
 public class logintest {
+  WebDriver driver;
+
+  @BeforeTest
+  public void setUp() {
+
+  System.setProperty("webdriver.chrome.driver","./drv/chromedriver.exe");
+  driver = new ChromeDriver();
+  driver.manage().window().maximize();
+  driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+  driver.get("https://mail.ru");
+}
+
+  @AfterTest
+  public void close_driver() {
+    driver.close();
+  }
+
 
   @Test
   public void Simpletest() {
     WebDriverWait wait;
-    System.setProperty("webdriver.chrome.driver", "./drv/chromedriver.exe");
-    WebDriver driver = new ChromeDriver();
-    driver.manage().window().maximize();
-    driver.navigate().to("http://88.99.27.54:6012/");
-    // Вставил явную паузу, ибо очень долго открывается форма.
-    driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+    MainPage main = new MainPage(driver);
     wait = new WebDriverWait(driver, 15);
-    WebElement login = wait.until(ExpectedConditions.elementToBeClickable(By.id("inputLogin")));
-    login.click();
-    LoginPage log = new LoginPage(driver);
-    log.LoginFail("operato", "operator");
-    log.submitLogin();
-    String mess = driver.findElement(By.xpath("//span")).getText();
-    if (mess.equals("Вы ошиблись в логине") == true) {}
-      else
-    {
-      System.out.println("Сообщение не содержите текст Вы ошиблись в логине");
-    }
-    System.out.println("Тест ошибка в логине: Успех");
-    driver.navigate().refresh();
-    log.LoginFail1("operator", "operato");
-    log.submitLogin();
-    String mess1 = driver.findElement(By.xpath("//span")).getText();
-    if (mess1.equals("Вы ошиблись в пароле") == true) {}
-    else
-    {
-      System.out.println("Сообщение не содержите текст Вы ошиблись в пароле");
-    }
-    System.out.println("Тест ошибка в пароле: Успех");
-    driver.navigate().refresh();
-    log.LoginAs("operator", "operator");
-    log.submitLogin();
-    System.out.println("Тест окончен, успешная авторизация.");
+    WebElement login = wait.until(ExpectedConditions.elementToBeClickable(main.getLogin()));
+    main.setLogin(TestConstants.MAIL_LOGIN);
+    main.clickSubmit();
+    WebElement pass = wait.until(ExpectedConditions.elementToBeClickable(main.getPass()));
+    main.setPassword(TestConstants.MAIL_PASSWORD);
+    main.clickSubmit();
+
+    MailBoxPage mailBox = new MailBoxPage(driver);
+    WebElement newMail = wait.until(ExpectedConditions.elementToBeClickable(mailBox.getNewMailButton()));
+    mailBox.clickNewMail();
+    WebElement mailTo = wait.until(ExpectedConditions.elementToBeClickable(mailBox.getMailTo()));
+    mailBox.setTextMailTo("k.n.ivanov@mail.ru");
+    mailBox.setSubject("Тестовое письмо");
+    mailBox.setBody("Отправка тестового письма");
+    mailBox.clickSend();
+    String status = mailBox.getStatusText();
+    System.out.println("status = " + status);
+    System.out.println("Тест завершен Успешно");
+
   }
 }
 
