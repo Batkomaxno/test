@@ -5,7 +5,7 @@ public class MailBoxPage {
     By mailTo = By.xpath("(//input[@type='text'])[1]");
     By subject = By.name("Subject");
     By body = By.xpath("(*//div[@dir='true']/../div/div/div)[1]");
-    By send = By.xpath("//span[contains(text(),'Отправить')]");
+    By send = By.xpath("//span[text()='Отправить']");
     By status = By.xpath("//div[@class='layer__header']");
 
     private final WebDriver driver;
